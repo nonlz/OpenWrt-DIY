@@ -16,8 +16,11 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add feed sources
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
-# Add cops
-echo "src-git cups https://github.com/TheMMcOfficial/lede-cups.git" >> feeds.conf.default
+
+# Add cups
+echo "src-git cups https://github.com/Gr4ffy/lede-cups.git" >> feeds.conf.default
+# echo "src-git cups https://github.com/fengchen-github/openwrt-cups.git" >> feeds.conf.default
+
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
