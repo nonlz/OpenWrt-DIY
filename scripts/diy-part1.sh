@@ -21,6 +21,9 @@ sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCIT
 echo "src-git cups https://github.com/Gr4ffy/lede-cups.git" >> feeds.conf.default
 # echo "src-git cups https://github.com/fengchen-github/openwrt-cups.git" >> feeds.conf.default
 
+# git clone https://github.com/lede-project/source
+# cd source
+# echo "src-git cups https://github.com/TheMMcOfficial/lede-cups.git" >> feeds.conf.default
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
